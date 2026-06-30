@@ -129,15 +129,15 @@ npm run preview
 
 ---
 
-## 📸 Screenshots
+## 📸 Screenshot
 
-> Screenshots will be added after deployment.
+![Homepage](screenshots/homepage.png)
 
 ---
 
 ## 🌍 Live Demo
 
-> Coming Soon (Vercel Deployment)
+🔗 https://sgc-website-five.vercel.app
 
 ---
 
