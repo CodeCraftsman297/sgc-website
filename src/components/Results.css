@@ -1,0 +1,142 @@
+.results {
+  padding: 90px 8%;
+  background: #fff8e6;
+  text-align: center;
+}
+
+.results h2 {
+  color: #5b2c1d;
+  font-size: clamp(2.3rem, 5vw, 3.2rem);
+  margin-bottom: 55px;
+}
+
+.results-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.card {
+  background: white;
+  padding: 35px 25px;
+  border-radius: 20px;
+  min-height: 190px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,.08);
+  transition: all .35s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0,0,0,.15);
+}
+
+.card h1 {
+  color: #f4c542;
+  font-size: 3rem;
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: #5b2c1d;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.topper-gallery {
+  display: flex;
+  justify-content: center;
+}
+
+.topper-gallery img {
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 22px;
+  box-shadow: 0 15px 35px rgba(0,0,0,.15);
+  transition: transform .35s ease;
+}
+
+.topper-gallery img:hover {
+  transform: scale(1.02);
+}
+
+/* ---------------- Laptop ---------------- */
+
+@media (max-width: 1024px) {
+
+  .results {
+    padding: 80px 6%;
+  }
+
+  .results-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+}
+
+/* ---------------- Tablet ---------------- */
+
+@media (max-width: 768px) {
+
+  .results {
+    padding: 70px 5%;
+  }
+
+  .results h2 {
+    font-size: 2.3rem;
+    margin-bottom: 45px;
+  }
+
+  .card {
+    min-height: 180px;
+    padding: 30px 20px;
+  }
+
+  .card h1 {
+    font-size: 2.6rem;
+  }
+
+}
+
+/* ---------------- Mobile ---------------- */
+
+@media (max-width: 480px) {
+
+  .results {
+    padding: 60px 20px;
+  }
+
+  .results h2 {
+    font-size: 2rem;
+  }
+
+  .results-stats {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .card {
+    min-height: auto;
+    padding: 28px 20px;
+  }
+
+  .card h1 {
+    font-size: 2.3rem;
+  }
+
+  .card p {
+    font-size: 0.95rem;
+  }
+
+  .topper-gallery img {
+    border-radius: 18px;
+  }
+
+}

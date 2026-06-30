@@ -1,0 +1,109 @@
+.announcement {
+  display: flex;
+  align-items: center;
+  background: #0d6efd;
+  color: white;
+  overflow: hidden;
+  height: 42px;
+  width: 100%;
+}
+
+.announcement-label {
+  background: #f4c542;
+  color: #5b2c1d;
+  font-weight: 700;
+  padding: 0 22px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  flex-shrink: 0;
+  letter-spacing: 0.3px;
+}
+
+.announcement-content {
+  flex: 1;
+  overflow: hidden;
+  padding-left: 15px;
+}
+
+.announcement-text {
+  display: flex;
+  width: max-content;
+  animation: scrollNotice 35s linear infinite;
+}
+
+.announcement-text span {
+  padding-right: 120px;
+  font-size: 15px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+@keyframes scrollNotice {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.announcement:hover .announcement-text {
+  animation-play-state: paused;
+}
+
+/* ---------------- Tablet ---------------- */
+
+@media (max-width: 768px) {
+
+  .announcement {
+    height: 40px;
+  }
+
+  .announcement-label {
+    padding: 0 14px;
+    font-size: 12px;
+  }
+
+  .announcement-content {
+    padding-left: 10px;
+  }
+
+  .announcement-text span {
+    font-size: 13px;
+    padding-right: 70px;
+  }
+
+}
+
+/* ---------------- Small Phones ---------------- */
+
+@media (max-width: 480px) {
+
+  .announcement{
+    height:36px;
+  }
+
+  .announcement-label{
+    padding:0 8px;
+    font-size:10px;
+    font-weight:700;
+  }
+
+  .announcement-content{
+    padding-left:6px;
+  }
+
+  .announcement-text{
+    animation:scrollNotice 28s linear infinite;
+  }
+
+  .announcement-text span{
+    font-size:11px;
+    padding-right:40px;
+  }
+
+}

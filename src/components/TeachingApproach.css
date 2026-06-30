@@ -1,0 +1,220 @@
+.teaching {
+  padding: 90px 8% 60px;
+  background: #f8fbff;
+}
+
+.teaching-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.teaching-header h2 {
+  color: #0d47a1;
+  font-size: clamp(2.4rem, 5vw, 3.2rem);
+  margin-bottom: 15px;
+}
+
+.teaching-header p {
+  max-width: 760px;
+  margin: auto;
+  color: #666;
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+/* ==========================
+   Timeline
+========================== */
+
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: auto;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 40px;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: #1565c0;
+  border-radius: 20px;
+}
+
+.timeline-item {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 45px;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-circle {
+  width: 80px;
+  height: 80px;
+  min-width: 80px;
+
+  border-radius: 50%;
+  background: white;
+  color: #1565c0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 2rem;
+
+  z-index: 2;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,.12);
+
+  transition: all .35s ease;
+}
+
+.timeline-card {
+  flex: 1;
+  margin-left: 35px;
+  background: white;
+  padding: 28px 32px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,.08);
+  transition: all .35s ease;
+}
+
+.timeline-item:hover .timeline-circle {
+  background: #1565c0;
+  color: white;
+  transform: scale(1.1);
+}
+
+.timeline-item:hover .timeline-card {
+  transform: translateX(10px);
+  box-shadow: 0 18px 40px rgba(0,0,0,.15);
+}
+
+.step-number {
+  display: inline-block;
+  background: #eaf3ff;
+  color: #1565c0;
+  padding: 6px 14px;
+  border-radius: 30px;
+  font-size: .85rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.timeline-card h3 {
+  color: #0d47a1;
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+}
+
+.timeline-card p {
+  color: #666;
+  line-height: 1.8;
+}
+
+/* ==========================
+   Laptop
+========================== */
+
+@media (max-width: 1024px) {
+
+  .teaching {
+    padding: 80px 6% 55px;
+  }
+
+}
+
+/* ==========================
+   Tablet
+========================== */
+
+@media (max-width: 768px) {
+
+  .teaching {
+    padding: 70px 5% 50px;
+  }
+
+  .teaching-header h2 {
+    font-size: 2.2rem;
+  }
+
+  .timeline::before {
+    left: 35px;
+  }
+
+  .timeline-circle {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    font-size: 1.6rem;
+    margin-left:5px;
+  }
+
+  .timeline-card {
+    margin-left: 20px;
+    padding: 22px;
+  }
+
+  .timeline-card h3 {
+    font-size: 1.25rem;
+  }
+
+}
+
+/* ==========================
+   Small Mobile
+========================== */
+
+@media (max-width: 480px) {
+
+  .teaching {
+    padding: 60px 20px 40px;
+  }
+
+  .teaching-header h2 {
+    font-size: 1.9rem;
+  }
+
+  .teaching-header p {
+    font-size: .95rem;
+  }
+
+  .timeline::before {
+    left: 25px;
+  }
+
+  .timeline-circle {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    font-size: 1.3rem;
+  }
+
+  .timeline-card {
+    margin-left: 16px;
+    padding: 18px;
+    border-radius: 16px;
+  }
+
+  .step-number {
+    font-size: .75rem;
+    padding: 5px 12px;
+  }
+
+  .timeline-card h3 {
+    font-size: 1.15rem;
+  }
+
+  .timeline-card p {
+    font-size: .92rem;
+    line-height: 1.6;
+  }
+
+}

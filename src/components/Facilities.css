@@ -1,0 +1,198 @@
+.facilities {
+  padding: 90px 8%;
+  background: #f8fbff;
+}
+
+.facilities-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.facilities-header h2 {
+  color: #0d47a1;
+  font-size: clamp(2.4rem, 5vw, 3.2rem);
+  margin-bottom: 15px;
+}
+
+.facilities-header p {
+  max-width: 700px;
+  margin: auto;
+  color: #666;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+/* ==========================
+   Grid
+========================== */
+
+.facilities-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+/* ==========================
+   Card
+========================== */
+
+.facility-card {
+  background: white;
+  border-radius: 20px;
+  padding: 35px 25px;
+  min-height: 310px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  text-align: center;
+
+  transition: all .35s ease;
+  box-shadow: 0 10px 25px rgba(0,0,0,.08);
+  cursor: pointer;
+}
+
+.facility-card:hover {
+  transform: translateY(-10px);
+  border-top: 5px solid #1565c0;
+  box-shadow: 0 20px 40px rgba(0,0,0,.15);
+}
+
+/* ==========================
+   Icon
+========================== */
+
+.facility-icon {
+  width: 82px;
+  height: 82px;
+  margin-bottom: 22px;
+
+  background: #eaf3ff;
+  color: #1565c0;
+
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 2.3rem;
+
+  transition: .35s ease;
+}
+
+.facility-card:hover .facility-icon {
+  background: #1565c0;
+  color: white;
+  transform: scale(1.12) rotate(-5deg);
+}
+
+/* ==========================
+   Text
+========================== */
+
+.facility-card h3 {
+  color: #0d47a1;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.facility-card p {
+  color: #666;
+  line-height: 1.75;
+  font-size: .97rem;
+}
+
+/* ==========================
+   Laptop
+========================== */
+
+@media (max-width: 1024px) {
+
+  .facilities {
+    padding: 80px 6%;
+  }
+
+  .facilities-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .facility-card {
+    min-height: 290px;
+  }
+
+}
+
+/* ==========================
+   Tablet
+========================== */
+
+@media (max-width: 768px) {
+
+  .facilities {
+    padding: 70px 5%;
+  }
+
+  .facilities-header h2 {
+    font-size: 2.2rem;
+  }
+
+  .facilities-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .facility-card {
+    min-height: auto;
+    padding: 32px 24px;
+  }
+
+  .facility-icon {
+    width: 75px;
+    height: 75px;
+    font-size: 2.1rem;
+  }
+
+}
+
+/* ==========================
+   Small Mobile
+========================== */
+
+@media (max-width: 480px) {
+
+  .facilities {
+    padding: 60px 20px;
+  }
+
+  .facilities-header h2 {
+    font-size: 1.9rem;
+  }
+
+  .facilities-header p {
+    font-size: .95rem;
+  }
+
+  .facility-card {
+    padding: 28px 20px;
+    border-radius: 18px;
+  }
+
+  .facility-icon {
+    width: 70px;
+    height: 70px;
+    font-size: 2rem;
+  }
+
+  .facility-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .facility-card p {
+    font-size: .95rem;
+  }
+
+}
