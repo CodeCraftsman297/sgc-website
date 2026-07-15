@@ -37,13 +37,36 @@ function Footer() {
         ></div>
 
         <p className="copyright">
-          © 2026 Shree Ganesh Classes. All Rights Reserved.
+          © {new Date().getFullYear()} Shree Ganesh Classes. All Rights Reserved.
         </p>
 
-        <p className="developer">
-          Designed &amp; Developed by{" "}
-          <strong>Nishant Khetal</strong> © 2026
-        </p>
+          <div
+    className="footer-line"
+    aria-hidden="true"
+  ></div>
+
+  <div className="developer-credit">
+
+    <p className="developer-title">
+      Website Designed &amp; Developed by
+    </p>
+
+    <p className="developer-name">
+      Nishant Khetal
+    </p>
+
+    <p className="developer-text">
+      Need a Professional Website?
+    </p>
+
+    <a
+      href="mailto:khetalnishant@gmail.com?subject=Website%20Development%20Inquiry"
+      className="developer-contact"
+    >
+      📧 Contact Developer
+    </a>
+
+  </div>
 
       </div>
 
